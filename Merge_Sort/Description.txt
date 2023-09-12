@@ -1,0 +1,22 @@
+Qestion:
+
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+
+
+
+Solve: 
+
+Birleştirme sıralaması, diziyi daha küçük alt dizilere bölen, bunları yinelemeli olarak sıralayan ve 
+ardından bunları tekrar sıralanmış bir dizide birleştiren bir sıralama algoritmasıdır. Verilen dizi için birleştirme sıralamasının adımları aşağıdaki gibidir:
+
+Diziyi iki yarıya bölün: [16, 21, 11] ve [8, 12, 22].
+Birleştirme sıralaması uygulayarak sol yarıyı sıralayın: [11, 16, 21].
+Birleştirme sıralaması uygulayarak sağ yarıyı sıralayın: [8, 12, 22].
+Sıralanmış iki yarımı tek bir sıralı dizide birleştirin: [8, 11, 12, 16, 21, 22].
+
+Birleştirme sıralamasının Büyük-O gösterimi O(n log n) şeklindedir; burada n, dizideki öğelerin sayısıdır.
+Bunun nedeni, birleştirme sıralamasının diziyi log n düzeylerine bölmesi ve her düzeyin alt dizileri birleştirmek için O(n) zaman gerektirmesidir.
+Bu nedenle toplam zaman karmaşıklığı O(n log n)'dir.
